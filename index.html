@@ -76,6 +76,20 @@
             50% { transform: scale(1.2); }
             100% { transform: scale(1); }
         }
+        .forgive-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff4d6d;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .forgive-button:hover {
+            background-color: #d63a52;
+        }
     </style>
 </head>
 <body>
@@ -100,9 +114,17 @@
         <div class="heart">❤️</div>
     </div>
 
+    <button class="forgive-button" onclick="forgiveMe()">I Forgive You ❤️</button>
+
     <footer class="footer">
         <h2>Forever Yours</h2>
         <p>I know I can't undo the past, but I will spend every day proving that I’m the partner you deserve. I love you more than words can say. Please forgive me, my love.</p>
     </footer>
+
+    <script>
+        function forgiveMe() {
+            alert('Yay! I promise to always make you smile, my love ❤️');
+        }
+    </script>
 </body>
 </html>
