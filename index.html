@@ -4,69 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I'm Sorry My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #fce7f3;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fdeef4;
             margin: 0;
             padding: 0;
             text-align: center;
+            color: #333;
+        }
+        header {
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #D76D77, #FFAF7B);
+            color: white;
+            border-radius: 0 0 20px 20px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         h1 {
             font-family: 'Dancing Script', cursive;
-            color: #D76D77;
+            font-size: 40px;
+            margin: 10px 0;
         }
         h2 {
-            color: #9c78b3;
             font-size: 24px;
+            color: #7b4b94;
         }
         .content {
             margin: 20px auto;
-            padding: 20px;
+            padding: 25px;
             width: 80%;
+            max-width: 700px;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: slideUp 1s ease-in-out;
+        }
+        .content:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
         .heart {
-            color: #ff69b4;
+            color: #ff4d6d;
             font-size: 100px;
+            margin: 20px 0;
+            animation: heartbeat 1.5s infinite;
         }
         .footer {
-            background-color: #f0e6f6;
-            padding: 20px;
-            font-size: 16px;
+            background-color: #f3d1e1;
+            padding: 30px;
+            font-size: 18px;
+            border-radius: 20px 20px 0 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>To My Dearest Fatima Bashir Rao,</h1>
-        <h2>I’ve been thinking long and hard about how I can express my apologies I know i did a lot of overthinking.</h2>
+        <h2>I've been thinking long and hard about how I can express my apologies. I know I overthink a lot.</h2>
     </header>
 
     <div class="content">
         <h2>I’m Truly Sorry</h2>
-        <p>I can’t begin to express how much it hurts me that I let you down. Every word, every action I did that caused you pain... it breaks my heart to know that I hurt the person I care about most in the world. I know words can’t always make things better, but I want you to know that I’m committed to learning, growing, and becoming a better partner. You deserve nothing less than my very best, and I promise to do better, for you and for us.</p>
+        <p>I can’t begin to express how much it hurts me that I let you down. Every word and action that caused you pain breaks my heart. I know words alone can’t fix everything, but I promise to learn, grow, and be better for you and for us.</p>
     </div>
 
     <div class="content">
         <h2>Our Relationship</h2>
-        <p>Do you remember the first time we talked? How i made you laugh about the silly things hehe our time together has been the most beautiful adventure of my life alhamdulillah. We’ve built so many wonderful memories, and I want to keep making more with you.</p>
-  
+        <p>Do you remember the first time we talked? How I made you laugh with silly things? Our time together has been the most beautiful adventure of my life, Alhamdulillah. We've created so many wonderful memories, and I want to make even more with you.</p>
     </div>
 
     <div class="content">
-        <h2>Truly Mean it</h2>
-        <p>I Apologize from the bottom of my heart.</p>
+        <h2>I Truly Mean It</h2>
+        <p>I apologize from the bottom of my heart.</p>
         <div class="heart">❤️</div>
     </div>
 
     <footer class="footer">
         <h2>Forever Yours</h2>
-        <p>I know that I can’t take back what I did, but I will spend every day trying to be the partner you deserve. I love you more than words can say, and I’ll always cherish you. Please forgive me, my love.</p>
+        <p>I know I can't undo the past, but I will spend every day proving that I’m the partner you deserve. I love you more than words can say. Please forgive me, my love.</p>
     </footer>
-
 </body>
 </html>
